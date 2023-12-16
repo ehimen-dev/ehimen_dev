@@ -29,12 +29,13 @@ const Alert = ({ preview }: Props) => {
             </>
           ) : (
             <>
-              The source code for this blog is{' '}
+            <div className="badge badge-primary badge-xs bg-green-500 rounded-full mx-2 animate-pulse"></div>
+              Currently building Digital Strategy @{' '}
               <a
                 href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
                 className="underline hover:text-blue-600 duration-200 transition-colors"
               >
-                available on GitHub
+                Nett Pharmacy
               </a>
               .
             </>

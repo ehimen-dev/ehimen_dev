@@ -1,3 +1,11 @@
+export const SITE_TITLE = "Owens Ehimen.";
+export const SITE_ARCHITECTURE = {
+  "About": "/about",
+  "Showcase": "showcase",
+  "Contact": "/contact"
+}
+
+
 export const EXAMPLE_PATH = 'blog-starter'
 export const CMS_NAME = 'Markdown'
 export const HOME_OG_IMAGE_URL =
