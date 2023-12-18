@@ -4,8 +4,11 @@ import {
   SITE_TITLE,
 } from "../lib/constants";
 
-export const Navbar = () => {
+type Props = {
+  position?: "top" | "bottom";
+};
 
+export const Navbar = ({ position }: Props) => {
   const renderNavItems = () => {
     const navItems = [];
     for (let page in SITE_ARCHITECTURE) {
@@ -22,13 +25,16 @@ export const Navbar = () => {
       );
     }
 
-    return navItems
+    return navItems;
   };
 
   return (
     <div className="navbar bg-base-100 sticky top-0 z-50 drop-shadow-md mb-4 rounded-md">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl text-blue-600" href="/">{`${SITE_TITLE}`}</a>
+        <a
+          className="btn btn-ghost text-xl text-blue-600"
+          href="/"
+        >{`${SITE_TITLE}`}</a>
       </div>
       <div className="flex-none">
         {...renderNavItems()}
