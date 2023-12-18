@@ -15,8 +15,8 @@ export const Navbar = ({ position }: Props) => {
       navItems.push(
         <div className="hidden sm:flex">
           <a
-            className={`btn btn-ghost text-l ${
-              HIGHLIGHTED_PAGES.includes(page) ? "text-blue-600" : ""
+            className={`btn btn-ghost hover:bg-base-100 hover:text-primary text-l mx-2 rounded-md ${
+              HIGHLIGHTED_PAGES.includes(page) ? "ring-2 ring-primary" : ""
             }`}
           >
             {page}
@@ -29,10 +29,10 @@ export const Navbar = ({ position }: Props) => {
   };
 
   return (
-    <div className="navbar bg-base-100 sticky top-0 z-50 drop-shadow-md mb-4 rounded-md">
+    <div className="navbar bg-base-100 sticky top-0 z-50 drop-shadow-md mb-4 rounded-md sm:px-8">
       <div className="flex-1">
         <a
-          className="btn btn-ghost text-xl text-blue-600"
+          className="btn btn-ghost hover:underline hover:bg-base-100 text-xl text-primary"
           href="/"
         >{`${SITE_TITLE}`}</a>
       </div>

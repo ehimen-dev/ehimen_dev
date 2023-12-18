@@ -3,6 +3,6 @@ module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["corporate", "black"],
+    themes: ["corporate", "dark"],
   },
 }

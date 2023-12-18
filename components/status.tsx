@@ -1,18 +1,14 @@
 import Container from './container'
-import cn from 'classnames'
 import { EXAMPLE_PATH } from '../lib/constants'
 
 type Props = {
   preview?: boolean
 }
 
-const Alert = ({ preview }: Props) => {
+const Status = ({ preview }: Props) => {
   return (
     <div
-      className={cn('border-b', {
-        'bg-neutral-800 border-neutral-800 text-white': preview,
-        'bg-neutral-50 border-neutral-200': !preview,
-      })}
+      className="bg-primary-content text-neutral-content"
     >
       <Container>
         <div className="py-2 text-center text-sm">
@@ -33,7 +29,7 @@ const Alert = ({ preview }: Props) => {
               Currently building Digital Strategy @{' '}
               <a
                 href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline hover:text-blue-600 duration-200 transition-colors"
+                className="underline hover:text-primary duration-200 transition-colors"
               >
                 Nett Pharmacy
               </a>
@@ -46,4 +42,4 @@ const Alert = ({ preview }: Props) => {
   )
 }
 
-export default Alert
+export default Status

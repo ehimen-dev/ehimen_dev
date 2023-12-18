@@ -15,8 +15,8 @@ const Layout = ({ children }: Props) => {
       <div className="min-h-screen">
         <Navbar />
         <main>{children}</main>
+        <MobileNavBar />
       </div>
-      <MobileNavBar />
       <Footer />
     </>
   );

@@ -10,7 +10,7 @@ const Intro = () => {
         A statically generated blog example using{' '}
         <a
           href="https://nextjs.org/"
-          className="underline hover:text-blue-600 duration-200 transition-colors"
+          className="underline hover:text-primary duration-200 transition-colors"
         >
           Next.js
         </a>{' '}

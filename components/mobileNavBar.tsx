@@ -5,11 +5,11 @@ export const MobileNavBar = () => {
     const navItems = [];
     for (let page in SITE_ARCHITECTURE) {
       navItems.push(
-        <li className={`btn btn-ghost text-l ${
-            HIGHLIGHTED_PAGES.includes(page) ? "text-blue-600" : ""
+        <div className={`btn btn-ghost text-md ${
+            HIGHLIGHTED_PAGES.includes(page) ? "bg-primary text-base-100 rounded-md" : ""
           }`}>
           <a>{`${page}`}</a>
-        </li>
+        </div>
       );
     }
 
@@ -17,8 +17,10 @@ export const MobileNavBar = () => {
   };
 
   return (
-    <ul className="flex justify-around menu menu-horizontal bg-base-200 rounded-box mt-6 sticky bottom-0 z-50 sm:hidden">
+    // q: Make this menu white
+    // a: 
+    <div className="flex justify-around menu menu-horizontal bg-base-100 mt-6 sticky bottom-0 z-50 sm:hidden ring-2 ring-neutral">
         {...renderNavItems()}
-    </ul>
+    </div>
   );
 };
