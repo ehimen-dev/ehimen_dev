@@ -10,7 +10,7 @@ export const Navbar = () => {
     const navItems = [];
     for (let page in SITE_ARCHITECTURE) {
       navItems.push(
-        <div className="flex-1">
+        <div className="hidden sm:flex">
           <a
             className={`btn btn-ghost text-l ${
               HIGHLIGHTED_PAGES.includes(page) ? "text-blue-600" : ""
@@ -26,7 +26,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 sticky top-0 z-50">
+    <div className="navbar bg-base-100 sticky top-0 z-50 drop-shadow-md mb-4 rounded-md">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl text-blue-600" href="/">{`${SITE_TITLE}`}</a>
       </div>
