@@ -1,9 +1,10 @@
 export const SITE_TITLE = "Owens Ehimen.";
 export const SITE_ARCHITECTURE = {
+  "Showcase": "/showcase",
   "About": "/about",
-  "Showcase": "showcase",
   "Contact": "/contact"
 }
+export const HIGHLIGHTED_PAGES = ["Showcase"]
 
 
 export const EXAMPLE_PATH = 'blog-starter'
