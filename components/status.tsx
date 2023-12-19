@@ -8,7 +8,7 @@ type Props = {
 const Status = ({ preview }: Props) => {
   return (
     <div
-      className="bg-primary-content text-neutral-content"
+      className="bg-primary-content text-neutral-content dark:bg-neutral-950 dark:text-neutral-300"
     >
       <Container>
         <div className="py-2 text-center text-sm">
@@ -25,7 +25,7 @@ const Status = ({ preview }: Props) => {
             </>
           ) : (
             <>
-            <div className="badge badge-primary badge-xs bg-green-500 rounded-full mx-2 animate-pulse"></div>
+            <div className="badge badge-primary badge-xs bg-green-400 rounded-full mx-2 animate-pulse"></div>
               Currently building Digital Strategy @{' '}
               <a
                 href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}

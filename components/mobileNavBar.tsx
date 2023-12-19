@@ -16,9 +16,7 @@ export const MobileNavBar = () => {
     return navItems;
   };
 
-  return (
-    // q: Make this menu white
-    // a: 
+  return ( 
     <div className="flex justify-around menu menu-horizontal bg-base-100 mt-6 sticky bottom-0 z-50 sm:hidden ring-2 ring-neutral">
         {...renderNavItems()}
     </div>
