@@ -1,5 +1,5 @@
-import DateFormatter from "../date-formatter";
-import CoverImage from "./cover-image";
+import DateFormatter from "../util/date-formatter";
+import CoverImage from "./post/cover-image";
 import Link from "next/link";
 import type Author from "../../interfaces/author";
 

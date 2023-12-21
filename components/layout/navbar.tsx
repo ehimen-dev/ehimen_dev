@@ -2,7 +2,7 @@ import {
   HIGHLIGHTED_PAGES,
   SITE_ARCHITECTURE,
   SITE_TITLE,
-} from "../lib/constants";
+} from "../../lib/constants";
 
 type Props = {
   position?: "top" | "bottom";

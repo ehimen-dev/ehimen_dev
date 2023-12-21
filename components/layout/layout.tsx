@@ -1,5 +1,5 @@
 import Footer from "./footer";
-import Meta from "./meta";
+import Meta from "../util/meta";
 import { MobileNavBar } from "./mobileNavBar";
 import { Navbar } from "./navbar";
 

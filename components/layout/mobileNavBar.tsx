@@ -1,4 +1,4 @@
-import { HIGHLIGHTED_PAGES, SITE_ARCHITECTURE } from "../lib/constants";
+import { HIGHLIGHTED_PAGES, SITE_ARCHITECTURE } from "../../lib/constants";
 
 export const MobileNavBar = () => {
   const renderNavItems = () => {

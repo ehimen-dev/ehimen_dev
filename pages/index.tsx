@@ -1,11 +1,11 @@
-import Container from '../components/container'
+import Container from '../components/util/container'
 import PostList from '../components/blog/post-list'
 import HeroPost from '../components/blog/hero-post'
-import Layout from '../components/layout'
+import Layout from '../components/layout/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
-import Status from '../components/status'
+import Status from '../components/layout/status'
 import { SITE_TITLE } from '../lib/constants'
 
 type Props = {

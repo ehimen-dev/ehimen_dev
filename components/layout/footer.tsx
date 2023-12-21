@@ -1,5 +1,5 @@
-import Container from "./container";
-import { EXAMPLE_PATH, FOOTER_LINKS } from "../lib/constants";
+import Container from "../util/container";
+import { EXAMPLE_PATH, FOOTER_LINKS } from "../../lib/constants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
