@@ -15,9 +15,10 @@ export const Navbar = ({ position }: Props) => {
       navItems.push(
         <div className="hidden sm:flex">
           <a
-            className={`btn btn-ghost hover:bg-base-100 hover:text-primary text-l mx-2 rounded-md ${
+            className={`btn btn-ghost hover:bg-base-100 hover:text-primary text-l mx-2 ${
               HIGHLIGHTED_PAGES.includes(page) ? "ring-2 ring-primary" : ""
             }`}
+            href={`${SITE_ARCHITECTURE[page]}`}
           >
             {page}
           </a>
@@ -29,7 +30,7 @@ export const Navbar = ({ position }: Props) => {
   };
 
   return (
-    <div className="navbar bg-base-100 sticky top-0 z-50 drop-shadow-md mb-4 rounded-md sm:px-8">
+    <div className="navbar bg-base-100 sticky top-0 z-50 drop-shadow-md mb-4 sm:px-8 ring-2 ring-neutral">
       <div className="flex-1">
         <a
           className="btn btn-ghost hover:underline hover:bg-base-100 text-xl text-primary"

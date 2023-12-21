@@ -1,10 +1,19 @@
-export const SITE_TITLE = "Owens Ehimen.";
+export const SITE_TITLE = "ehimen.dev";
 export const SITE_ARCHITECTURE = {
   "Showcase": "/showcase",
   "About": "/about",
   "Contact": "/contact"
 }
 export const HIGHLIGHTED_PAGES = ["Showcase"]
+
+
+// Footer
+export const FOOTER_LINKS = {
+  "Github": "https://github.com/ehimen-io",
+  "LinkedIn": "https://www.linkedin.com/in/owensehimen/",
+  "Mastodon": "/",
+  "Email": "mailto:oehim101@gmail.com"
+}
 
 
 export const EXAMPLE_PATH = 'blog-starter'
