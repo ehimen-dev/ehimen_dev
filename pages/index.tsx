@@ -6,15 +6,14 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
 import Status from '../components/layout/status'
-import { SITE_TITLE } from '../lib/constants'
+import { POSTS_PATH, SHOWCASE_PATH, SITE_TITLE } from '../lib/constants'
 
 type Props = {
-  allPosts: Post[]
+  heroPost: Post;
+  morePosts: Post[]
 }
 
-export default function Index({ allPosts }: Props) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+export default function Index({ heroPost, morePosts }: Props) {
   return (
     <>
     <Status />
@@ -41,16 +40,25 @@ export default function Index({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
+  const heroPost = getAllPosts(SHOWCASE_PATH, [
     'title',
     'date',
     'slug',
     'author',
     'coverImage',
     'excerpt',
-  ])
+  ])[0]; // Latest post
+
+  const morePosts = getAllPosts(POSTS_PATH, [
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+  ]);
 
   return {
-    props: { allPosts },
+    props: { heroPost, morePosts },
   }
 }

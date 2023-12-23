@@ -5,9 +5,9 @@ import Layout from "../../components/layout/layout";
 import PostTitle from "../../components/blog/post/post-title";
 import Head from "next/head";
 import type PostType from "../../interfaces/post";
-import { POSTS_PATH } from "../../lib/constants";
+import { SHOWCASE_PATH } from "../../lib/constants";
 import Post from "../../components/blog/post/post";
-import { StaticPageParams, getStaticPropsForPage, getStaticPathsForPage } from "../../lib/pageUtils";
+import { StaticPageParams, getStaticPathsForPage, getStaticPropsForPage } from "../../lib/pageUtils";
 
 type Props = {
   post: PostType;
@@ -41,7 +41,7 @@ export default function Content({ post, morePosts, preview }: Props) {
   );
 }
 
-const path = POSTS_PATH;
+const path = SHOWCASE_PATH;
 
 export async function getStaticProps({ params }: StaticPageParams) {
   return getStaticPropsForPage(path, {params})

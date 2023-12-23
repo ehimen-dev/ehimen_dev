@@ -1,11 +1,15 @@
+// Header + NavBars
 export const SITE_TITLE = "ehimen.dev";
-export const SITE_ARCHITECTURE = {
+export const NAVBAR_LINKS = {
   "Showcase": "/showcase",
   "About": "/about",
   "Contact": "/contact"
 }
 export const HIGHLIGHTED_PAGES = ["Showcase"];
 
+// Content Directories
+export const SHOWCASE_PATH = "_md/_showcase";
+export const POSTS_PATH = "_md/_posts";
 
 // Footer
 export const FOOTER_LINKS = {

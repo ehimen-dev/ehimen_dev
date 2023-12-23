@@ -1,9 +1,9 @@
-import { HIGHLIGHTED_PAGES, SITE_ARCHITECTURE } from "../../lib/constants";
+import { HIGHLIGHTED_PAGES, NAVBAR_LINKS } from "../../lib/constants";
 
 export const MobileNavBar = () => {
   const renderNavItems = () => {
     const navItems = [];
-    for (const [page, path] of Object.entries(SITE_ARCHITECTURE)) {
+    for (const [page, path] of Object.entries(NAVBAR_LINKS)) {
       navItems.push(
         <div className={`btn btn-ghost text-md ${
             HIGHLIGHTED_PAGES.includes(page) ? "ring-2 ring-primary" : ""
