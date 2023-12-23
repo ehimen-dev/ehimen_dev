@@ -22,23 +22,19 @@ const Footer = () => {
   return (
     <footer className="bg-primary-content dark:bg-neutral-950 border-t">
       <Container>
-        <div className="py-20 flex flex-col lg:flex-row items-center">
-          <h3 className="text-neutral-content text-2xl lg:text-[1.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
+        <div className="py-20 flex flex-col justify-around px-2 lg:flex-row items-center">
+          <h3 className="text-neutral-content text-2xl lg:text-[1.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4">
             © {currentYear} Owens Ehimen
           </h3>
           <div className="flex flex-col justify-center items-center">
-            <div className="lg:px-8 mb-10 lg:mb-0">
-              {...renderLinks()}
-            </div>
+            <div className="lg:px-8 mb-10 lg:mb-0">{...renderLinks()}</div>
           </div>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="./notes"
-              className="mx-3 bg-base-100 border hover:bg-primary hover:text-black border-black font-bold py-3 px-12 lg:px-8 duration-200 transition-colors"
-            >
-              Read My Notes
-            </a>
-          </div>
+          <a
+            href="./notes"
+            className="mx-3 bg-base-100 border hover:bg-primary hover:text-black border-black font-bold py-3 px-12 lg:px-8 duration-200 transition-colors"
+          >
+            Read My Notes
+          </a>
         </div>
       </Container>
     </footer>

@@ -4,7 +4,7 @@ export const SITE_ARCHITECTURE = {
   "About": "/about",
   "Contact": "/contact"
 }
-export const HIGHLIGHTED_PAGES = ["Showcase"]
+export const HIGHLIGHTED_PAGES = ["Showcase"];
 
 
 // Footer

@@ -4,11 +4,7 @@ import {
   SITE_TITLE,
 } from "../../lib/constants";
 
-type Props = {
-  position?: "top" | "bottom";
-};
-
-export const Navbar = ({ position }: Props) => {
+export const Navbar = () => {
   const renderNavItems = () => {
     const navItems = [];
     for (let page in SITE_ARCHITECTURE) {

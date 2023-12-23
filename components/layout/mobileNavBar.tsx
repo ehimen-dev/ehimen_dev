@@ -7,7 +7,7 @@ export const MobileNavBar = () => {
       navItems.push(
         <div className={`btn btn-ghost text-md ${
             HIGHLIGHTED_PAGES.includes(page) ? "ring-2 ring-primary" : ""
-          }`}>
+          }`} key={`${path}`}>
           <a href={`${path}`}>{`${page}`}</a>
         </div>
       );
