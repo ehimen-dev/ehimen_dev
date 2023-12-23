@@ -1,3 +1,4 @@
+import cn from 'classnames'
 import DateFormatter from "../../util/date-formatter";
 import CoverImage from "./cover-image";
 import Link from "next/link";
@@ -21,7 +22,9 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div>
+    <div className={cn('shadow-sm px-3 py-3 rounded-md ring-1 ring-secondary', {
+      'hover:shadow-lg hover:ring-2 transition-shadow duration-200': slug,
+    })}>
       <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
@@ -29,7 +32,7 @@ const PostPreview = ({
         <Link
           as={`/posts/${slug}`}
           href="/posts/[slug]"
-          className="hover:text-primary hover:transition-colors"
+          className="hover:text-primary hover:transition-colors hover:duration-200"
         >
           {title}
         </Link>
