@@ -29,6 +29,7 @@ export default function Index({ heroPost, morePosts }: Props) {
               date={heroPost.date}
               author={heroPost.author}
               slug={heroPost.slug}
+              path='showcase'
               excerpt={heroPost.excerpt}
             />
           )}

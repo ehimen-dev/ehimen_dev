@@ -30,7 +30,7 @@ export default function Content({ post, morePosts, preview }: Props) {
             <article>
               <Head>
                 <title>{post.title}</title>
-                <meta property="og:image" content={post.ogImage.url} />
+                {post.ogImage?.url ?? (<meta property="og:image" content={post.ogImage.url} />)}
               </Head>
               <Post post={post} morePosts={morePosts} />
             </article>

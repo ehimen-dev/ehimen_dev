@@ -10,6 +10,7 @@ export const HIGHLIGHTED_PAGES = ["Showcase"];
 // Content Directories
 export const SHOWCASE_PATH = "_md/_showcase";
 export const POSTS_PATH = "_md/_posts";
+export const MISC_PATH = "_md/_misc";
 
 // Footer
 export const FOOTER_LINKS = {

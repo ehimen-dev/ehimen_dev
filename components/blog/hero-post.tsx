@@ -10,6 +10,7 @@ type Props = {
   excerpt: string;
   author: Author;
   slug: string;
+  path?: string;
 };
 
 const HeroPost = ({
@@ -19,18 +20,19 @@ const HeroPost = ({
   excerpt,
   author,
   slug,
+  path = "posts"
 }: Props) => {
   return (
     <section>
-      <div className="mb-8 md:mb-16">
-        <CoverImage title={title} src={coverImage} slug={slug} />
+      <div className="mb-8 md:mb-10 md:px-16">
+        <CoverImage title={title} src={coverImage}/>
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
           <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
             <Link
-              as={`/posts/${slug}`}
-              href="/posts/[slug]"
+              as={`/${path}/${slug}`}
+              href={`/${path}/[slug]`}
               className="hover:text-primary"
             >
               {title}
@@ -45,13 +47,13 @@ const HeroPost = ({
           <div className="flex justify-between">
             <a
               className="text-xl font-bold hover:text-primary"
-              href="./posts/about"
+              href="./about"
             >
               {author.name}
             </a>
             <a
               className="hover:text-primary underline"
-              href={`./posts/${slug}`}
+              href={`./${path}/${slug}`}
             >
               Read More -{">"}{" "}
             </a>

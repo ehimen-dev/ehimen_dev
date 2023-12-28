@@ -6,6 +6,7 @@ import Head from 'next/head'
 import Post from '../interfaces/post'
 import Status from '../components/layout/status'
 import { SHOWCASE_PATH, SITE_TITLE } from '../lib/constants'
+import PostTitle from '../components/blog/post/post-title'
 
 type Props = {
   allPosts: Post[]
@@ -20,7 +21,8 @@ export default function Showcase({ allPosts }: Props) {
           <title>{SITE_TITLE}</title>
         </Head>
         <Container>
-          {allPosts.length > 0 && <PostList posts={allPosts} />}
+          <PostTitle>Project Showcase</PostTitle>
+          {allPosts.length > 0 && <PostList posts={allPosts} path='showcase'/>}
         </Container>
       </Layout>
     </>
@@ -35,7 +37,7 @@ export const getStaticProps = async () => {
     'author',
     'coverImage',
     'excerpt',
-  ]); // Latest post
+  ]);
 
   return {
     props: { allPosts },

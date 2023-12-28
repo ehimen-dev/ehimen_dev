@@ -4,9 +4,10 @@ import type Post from '../../interfaces/post'
 type Props = {
   posts: Post[]
   title?: string
+  path?: string
 }
 
-const PostList = ({ posts, title }: Props) => {
+const PostList = ({ posts, title, path = "posts" }: Props) => {
   return (
     <section>
       {title && (
@@ -23,6 +24,7 @@ const PostList = ({ posts, title }: Props) => {
             date={post.date}
             author={post.author}
             slug={post.slug}
+            path={path}
             excerpt={post.excerpt}
           />
         ))}
