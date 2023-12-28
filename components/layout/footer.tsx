@@ -20,7 +20,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary-content dark:bg-neutral-950 border-t">
+    <footer className="bg-primary-content dark:bg-neutral-950 border-t" id="contact">
       <Container>
         <div className="py-20 flex flex-col justify-around px-2 lg:flex-row items-center">
           <h3 className="text-neutral-content text-2xl lg:text-[1.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4">

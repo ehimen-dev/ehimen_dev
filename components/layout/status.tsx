@@ -26,14 +26,13 @@ const Status = ({ preview }: Props) => {
           ) : (
             <>
             <div className="badge badge-primary badge-xs bg-green-400 rounded-full mx-2 animate-pulse"></div>
-              Currently building Digital Strategy @{' '}
+              Currently building Digital Strategy @ Nett Pharmacy.{' '}
               <a
                 href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
                 className="underline hover:text-primary duration-200 transition-colors"
               >
-                Nett Pharmacy
+                Learn More
               </a>
-              .
             </>
           )}
         </div>

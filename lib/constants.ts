@@ -3,7 +3,7 @@ export const SITE_TITLE = "ehimen.dev";
 export const NAVBAR_LINKS = {
   "Showcase": "/showcase",
   "About": "/about",
-  "Contact": "/contact"
+  "Contact": "#contact"
 }
 export const HIGHLIGHTED_PAGES = ["Showcase"];
 

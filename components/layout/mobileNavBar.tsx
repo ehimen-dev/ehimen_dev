@@ -17,7 +17,7 @@ export const MobileNavBar = () => {
   };
 
   return ( 
-    <div className="flex justify-around menu menu-horizontal bg-base-100 mt-6 sticky bottom-2 z-50 sm:hidden drop-shadow-lg">
+    <div className="flex justify-around menu menu-horizontal bg-base-100 mt-6 sticky bottom-2 z-50 sm:hidden drop-shadow-lg ring-1 ring-neutral-content">
         {...renderNavItems()}
     </div>
   );

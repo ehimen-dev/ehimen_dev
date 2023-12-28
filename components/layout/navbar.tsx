@@ -34,7 +34,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="navbar sticky top-0 z-50 mb-4 sm:px-8 ring-1 ring-primary border-t bg-base-100">
+    <div className="navbar sticky top-0 z-50 mb-4 sm:px-8 ring-1 ring-neutral-content border-t bg-base-100">
       <div className="flex-1">
         <a
           className="btn btn-ghost hover:underline hover:bg-base-100 text-xl text-primary"
