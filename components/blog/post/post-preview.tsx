@@ -28,7 +28,7 @@ const PostPreview = ({
       className={cn(
         "px-3 py-3 rounded-md ring-primary flex flex-col justify-between",
         {
-          "hover:shadow-lg hover:ring-2 transition-shadow duration-200": slug,
+          "md:hover:shadow-lg md:hover:ring-2 transition-shadow duration-200": slug,
         }
       )}
     >
