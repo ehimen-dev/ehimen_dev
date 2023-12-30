@@ -1,5 +1,4 @@
 import Container from '../util/container'
-import { EXAMPLE_PATH } from '../../lib/constants'
 
 type Props = {
   preview?: boolean
