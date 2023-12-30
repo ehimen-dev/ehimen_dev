@@ -1,26 +1,22 @@
-import { useEffect } from "react";
 import {
   NAVBAR_LINKS,
   SITE_TITLE,
 } from "../../lib/constants";
-import { themeChange } from "theme-change";
+import ActiveLink from "../util/active-link";
+import { useRouter } from "next/router";
 
 export const Navbar = () => {
-  useEffect(() => {
-    themeChange(false);
-  }, []);
+  const router = useRouter();
+  
 
   const renderNavItems = () => {
     const navItems = [];
     for (const [page, path] of Object.entries(NAVBAR_LINKS)) {
       navItems.push(
         <div className="hidden sm:flex" key={path}>
-          <a
-            className={`btn btn-ghost hover:bg-base-100 hover:text-primary text-l mx-2`}
-            href={`${NAVBAR_LINKS[page]}`}
-          >
+          <ActiveLink href={`${path}`} extraStyles={"btn btn-ghost hover:bg-base-100 hover:text-primary text-l mx-2"}>
             {page}
-          </a>
+          </ActiveLink>
         </div>
       );
     }
@@ -31,10 +27,9 @@ export const Navbar = () => {
   return (
     <div className="navbar sticky top-0 z-50 mb-4 sm:px-8 ring-1 ring-neutral-content border-t bg-base-100">
       <div className="flex-1">
-        <a
-          className="btn btn-ghost hover:underline hover:bg-base-100 text-xl text-primary"
-          href="/"
-        >{`${SITE_TITLE}`}</a>
+        <ActiveLink href="/" extraStyles="btn btn-ghost hover:underline hover:bg-base-100 hover:text-primary text-xl">
+          {`${SITE_TITLE}`}
+        </ActiveLink>
       </div>
       <div className="flex-none">
         {...renderNavItems()}

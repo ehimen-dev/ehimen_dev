@@ -1,4 +1,5 @@
 import { NAVBAR_LINKS } from "../../lib/constants";
+import ActiveLink from "../util/active-link";
 
 export const MobileNavBar = () => {
   const renderNavItems = () => {
@@ -6,7 +7,9 @@ export const MobileNavBar = () => {
     for (const [page, path] of Object.entries(NAVBAR_LINKS)) {
       navItems.push(
         <div className={"btn btn-ghost text-md"} key={`${path}`}>
-          <a href={`${path}`}>{`${page}`}</a>
+          <ActiveLink href={`${path}`}>
+            {page}
+          </ActiveLink>
         </div>
       );
     }
