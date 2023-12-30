@@ -1,5 +1,5 @@
 import Container from "../util/container";
-import { EXAMPLE_PATH, FOOTER_LINKS } from "../../lib/constants";
+import { FOOTER_LINKS } from "../../lib/constants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="lg:px-8 mb-10 lg:mb-0">{...renderLinks()}</div>
           </div>
           <a
-            href="./notes"
+            href="/notes"
             className="mx-3 bg-base-100 border hover:bg-primary hover:text-black border-black font-bold py-3 px-12 lg:px-8 duration-200 transition-colors"
           >
             Read My Notes
