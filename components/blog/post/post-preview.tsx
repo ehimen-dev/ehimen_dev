@@ -37,7 +37,7 @@ const PostPreview = ({
           <CoverImage title={title} src={coverImage} />
         </div>
         <h3 className="text-3xl mb-3 leading-snug">{title}</h3>
-        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+        <p className="text-lg leading-relaxed mb-4 text-justify">{excerpt}</p>
       </Link>
       <div className="flex justify-between">
         <a

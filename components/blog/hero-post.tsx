@@ -23,11 +23,11 @@ const HeroPost = ({
   path = "posts"
 }: Props) => {
   return (
-    <section>
+    <section className="hidden sm:block">
       <div className="mb-8 md:mb-10 md:px-16">
         <CoverImage title={title} src={coverImage}/>
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-5 md:mb-15">
         <div>
           <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
             <Link
@@ -43,7 +43,7 @@ const HeroPost = ({
           </div>
         </div>
         <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+          <p className="text-lg leading-relaxed mb-4 text-justify">{excerpt}</p>
           <div className="flex justify-between">
             <a
               className="text-xl font-bold hover:text-primary"
@@ -55,7 +55,7 @@ const HeroPost = ({
               className="hover:text-primary underline"
               href={`./${path}/${slug}`}
             >
-              Read More -{">"}{" "}
+              Learn More -{">"}{" "}
             </a>
           </div>
         </div>

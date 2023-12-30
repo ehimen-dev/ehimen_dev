@@ -5,9 +5,10 @@ type Props = {
   posts: Post[]
   title?: string
   path?: string
+  containsShowcase?: boolean
 }
 
-const PostList = ({ posts, title, path = "posts" }: Props) => {
+const PostList = ({ posts, title, path = "posts", containsShowcase=false }: Props) => {
   return (
     <section>
       {title && (
@@ -15,8 +16,8 @@ const PostList = ({ posts, title, path = "posts" }: Props) => {
           {title}
         </h2>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-10 mb-32">
-        {posts.map((post) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-10 mb-20">
+        {posts.map((post, index) => (
           <PostPreview
             key={post.slug}
             title={post.title}
@@ -24,7 +25,7 @@ const PostList = ({ posts, title, path = "posts" }: Props) => {
             date={post.date}
             author={post.author}
             slug={post.slug}
-            path={path}
+            path={index === 0 && containsShowcase ? "showcase" : path}
             excerpt={post.excerpt}
           />
         ))}

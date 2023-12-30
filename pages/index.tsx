@@ -14,6 +14,7 @@ type Props = {
 }
 
 export default function Index({ heroPost, morePosts }: Props) {
+  const allPosts = [heroPost, ...morePosts];
   return (
     <>
     <Status />
@@ -33,7 +34,8 @@ export default function Index({ heroPost, morePosts }: Props) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <PostList posts={morePosts} />}
+          <div className="hidden sm:block">{morePosts.length > 0 && <PostList posts={morePosts} />}</div>
+          <div className="block sm:hidden">{allPosts.length > 0 && <PostList posts={allPosts} containsShowcase/>}</div>
         </Container>
       </Layout>
     </>
