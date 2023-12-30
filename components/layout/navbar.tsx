@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import {
-  HIGHLIGHTED_PAGES,
   NAVBAR_LINKS,
   SITE_TITLE,
 } from "../../lib/constants";
@@ -13,15 +12,11 @@ export const Navbar = () => {
 
   const renderNavItems = () => {
     const navItems = [];
-    for (let page in NAVBAR_LINKS) {
+    for (const [page, path] of Object.entries(NAVBAR_LINKS)) {
       navItems.push(
-        <div className="hidden sm:flex">
+        <div className="hidden sm:flex" key={path}>
           <a
-            className={`btn btn-ghost hover:bg-base-100 hover:text-primary text-l mx-2 ${
-              HIGHLIGHTED_PAGES.includes(page)
-                ? "ring-1 ring-primary hover:ring-2"
-                : ""
-            }`}
+            className={`btn btn-ghost hover:bg-base-100 hover:text-primary text-l mx-2`}
             href={`${NAVBAR_LINKS[page]}`}
           >
             {page}
