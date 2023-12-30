@@ -2,13 +2,10 @@ import {
   NAVBAR_LINKS,
   SITE_TITLE,
 } from "../../lib/constants";
+import { ThemeContoller } from "../theme-controller";
 import ActiveLink from "../util/active-link";
-import { useRouter } from "next/router";
 
 export const Navbar = () => {
-  const router = useRouter();
-  
-
   const renderNavItems = () => {
     const navItems = [];
     for (const [page, path] of Object.entries(NAVBAR_LINKS)) {
@@ -30,6 +27,9 @@ export const Navbar = () => {
         <ActiveLink href="/" extraStyles="btn btn-ghost hover:underline hover:bg-base-100 hover:text-primary text-xl">
           {`${SITE_TITLE}`}
         </ActiveLink>
+      </div>
+      <div className="flex-inline">
+        <ThemeContoller />
       </div>
       <div className="flex-none">
         {...renderNavItems()}

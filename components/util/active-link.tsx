@@ -10,7 +10,7 @@ type Props = {
 function ActiveLink({ children, href, extraStyles = "" }: Props) {
   const router = useRouter();
 
-  const classNames = useMemo(() => `${router.asPath.includes(href) ? 'text-primary' : 'text-neutral'}`, [router.pathname, href])
+  const classNames = useMemo(() => `${router.asPath.includes(href) ? 'text-primary' : ''}`, [router.pathname, href])
  
   const handleClick = (e) => {
     e.preventDefault()
