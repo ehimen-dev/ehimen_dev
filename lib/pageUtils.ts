@@ -1,4 +1,5 @@
 import { getPostBySlug, getAllPosts } from "./api";
+import { POSTS_PATH } from "./constants";
 import markdownToHtml from "./markdownToHtml";
 
 export type StaticPageParams = {
@@ -17,6 +18,15 @@ export async function getStaticPropsForPage(path: string, { params }: StaticPage
       "ogImage",
       "coverImage",
     ]);
+  
+    const morePosts = getAllPosts(POSTS_PATH, [
+      'title',
+      'date',
+      'slug',
+      'author',
+      'coverImage',
+      'excerpt',
+    ]).slice(0, 4); // Only want at most 4 posts
     const content = await markdownToHtml(post.content || "");
   
     return {
@@ -25,6 +35,7 @@ export async function getStaticPropsForPage(path: string, { params }: StaticPage
           ...post,
           content,
         },
+        morePosts: morePosts.filter((p) => p.slug !== post.slug)
       },
     };
 }
