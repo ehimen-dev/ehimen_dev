@@ -14,11 +14,11 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      {coverImage ? (
+      {/* {coverImage ? (
         <div className="mb-8 md:mb-16 sm:mx-0">
           <CoverImage title={title} src={coverImage} />
         </div>
-      ) : null}
+      ) : null} */}
       <div className="max-w-2xl mx-auto">
         {author?.name ? (
           <div className="block mb-6">

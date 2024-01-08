@@ -16,7 +16,7 @@ export const FOOTER_LINKS = {
   "Github": "https://github.com/ehimen-io",
   "LinkedIn": "https://www.linkedin.com/in/owensehimen/",
   "Mastodon": "https://mastodon.social/@callsignoscar",
-  "Email me": "mailto:oehim101@gmail.com"
+  "Email": "mailto:oehim101@gmail.com"
 }
 
 // Misc
