@@ -1,7 +1,4 @@
-import { Head } from "next/document";
 import PostType from "../../../interfaces/post";
-import Layout from "../../layout/layout";
-import Container from "../../util/container";
 import PostBody from "./post-body";
 import PostHeader from "./post-header";
 

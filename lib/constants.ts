@@ -15,7 +15,7 @@ export const MISC_PATH = "_md/_misc";
 export const FOOTER_LINKS = {
   "Github": "https://github.com/ehimen-io",
   "LinkedIn": "https://www.linkedin.com/in/owensehimen/",
-  "Mastodon": "/",
+  "Mastodon": "https://mastodon.social/@callsignoscar",
   "Email": "mailto:oehim101@gmail.com"
 }
 

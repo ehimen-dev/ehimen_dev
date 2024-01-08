@@ -1,13 +1,32 @@
 ---
-title: 'About Me'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-date: '2020-03-16T05:35:07.322Z'
+title: 'What is this all about?'
+excerpt: 'About me, but more about the blog'
+date: '2024-01-07T05:35:07.322Z'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+> *What I build, Problems I've solved, that's the idea at least...*
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+![Owens Ehimen](/assets/blog/about/profile_image.jpg "Owens Ehimen")
 
-## Lorem Ipsum
+My name is Owens Ehimen,  I am a software developer based in Toronto, and I have a confession to make: As of this writing, I haven't *built* anything. 
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+To be fair to myself, I have contributed to software projects, worked professionally as a developer for 2 years, and I can *talk all day* about how to use various design patterns in Java or how to organize code. However, there is a non-fungible experience that comes from **building a project from A -> Z** that I don't believe I have experience doing (as of this writing).
+
+Therefore, the purpose of building this blog is to write about **<u>what I have built</u>** and [showcase](/showcase) these projects whenever possible. This blog serves as a builder's journal, so I can confidently say that all the posts on this blog solely relate to my learnings working with a specific technology or concept. To be more specific:
+
+* I will **<u>ONLY</u>** be writing about what **I built**, how **I built it** and my motivations for **building it**. This blog is solely for problems I've solved and what I've built.
+
+  
+
+* I will **<u>NOT</u>** be writing about any specific framework or technology. I will instead be talking about holistic software solutions to problems, or software business ideas that typically involve every level in a software stack (front-end, back-end, database, and even AI or ML techniques).
+
+* I will **<u>NOT</u>** be writing about myself and my personal life.
+
+---
+
+Thanks for being here! Take a look at some of these experiences below:
+
+
+
+
+
