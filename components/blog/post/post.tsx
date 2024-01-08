@@ -1,14 +1,17 @@
 import PostType from "../../../interfaces/post";
+import PostList from "../post-list";
 import PostBody from "./post-body";
 import PostHeader from "./post-header";
+import PostTitle from "./post-title";
 
 export type PostProps = {
   post: PostType;
   morePosts: PostType[];
   preview?: boolean;
+  path?: string;
 };
 
-const Post = ({ post, morePosts, preview }: PostProps) => {
+const Post = ({ post, morePosts, preview, path="posts" }: PostProps) => {
   return (
     <>
       <PostHeader
@@ -18,6 +21,8 @@ const Post = ({ post, morePosts, preview }: PostProps) => {
         author={post.author}
       />
       <PostBody content={post.content} />
+      <div className="divider my-20">Next up...</div>
+      <PostList posts={morePosts} path={path}/>
     </>
   );
 };

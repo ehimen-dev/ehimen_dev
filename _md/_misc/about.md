@@ -22,11 +22,5 @@ Therefore, the purpose of building this blog is to write about **<u>what I have 
 
 * I will **<u>NOT</u>** be writing about myself and my personal life.
 
----
-
 Thanks for being here! Take a look at some of these experiences below:
-
-
-
-
 

@@ -14,10 +14,10 @@
 }
 
 .markdown ul {
-  @apply list-disc;
+  @apply list-disc mx-5;
 }
 .markdown ol {
-  @apply list-decimal;
+  @apply list-decimal mx-5;
 }
 
 .markdown h2 {
