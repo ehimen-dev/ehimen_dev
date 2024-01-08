@@ -8,6 +8,7 @@ import type PostType from "../../interfaces/post";
 import { POSTS_PATH } from "../../lib/constants";
 import Post from "../../components/blog/post/post";
 import { StaticPageParams, getStaticPropsForPage, getStaticPathsForPage } from "../../lib/pageUtils";
+import PostList from "../../components/blog/post-list";
 
 type Props = {
   post: PostType;
@@ -33,6 +34,7 @@ export default function Content({ post, morePosts, preview }: Props) {
                 {post.ogImage?.url ?? (<meta property="og:image" content={post.ogImage.url} />)}
               </Head>
               <Post post={post} morePosts={morePosts} />
+              <PostList posts={morePosts} />
             </article>
           </>
         )}
